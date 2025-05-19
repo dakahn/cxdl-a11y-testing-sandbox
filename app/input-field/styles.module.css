@@ -1,0 +1,21 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+}
+
+.errorWrapper {
+  display: flex;
+}
+
+.errorWrapper > span {
+  color: #c11f32;
+}
+
+.errortext {
+  color: #c11f32;
+}
+
+#errorInput {
+  border-color: #c11f32;
+}

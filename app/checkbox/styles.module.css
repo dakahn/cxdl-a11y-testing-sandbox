@@ -1,0 +1,26 @@
+.checkbox__nestedcontainer {
+  padding-left: 1rem;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.hinttext {
+  font-size: 80%;
+  padding-top: 6px;
+}
+
+.errortext__wrapper {
+  display: flex;
+}
+
+.errortext__wrapper > span {
+  color: #c11f32;
+}
+
+.errortext {
+  color: #c11f32;
+}
+

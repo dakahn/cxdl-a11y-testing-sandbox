@@ -1,0 +1,73 @@
+.container {
+  position: relative; /* Ensures dropdown is positioned relative to this */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.inputWrapper {
+  display: flex;
+}
+
+.input {
+  padding: 0 16px;
+  border-top: 1px solid #d7d7d8;
+  border-right: transparent;
+  border-bottom: 1px solid #d7d7d8;
+  border-left: 1px solid #d7d7d8;
+  border-radius: 48px 0px 0px 48px;
+  font-size: 16px;
+  height: 48px;
+  outline: none;
+  background-color: white;
+  width: 100%;
+}
+
+.inputLabel {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.button {
+  background: none;
+  border-left: none;
+  border-right: 1px #d7d7d8 solid;
+  border-top: 1px #d7d7d8 solid;
+  border-bottom: 1px #d7d7d8 solid;
+  border-radius: 0px 48px 48px 0px;
+  padding-right: 16px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  background: white;
+  border: 1px solid #d7d7d8;
+  border-radius: 24px;
+  padding: 8px;
+  margin-top: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.dropdown li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #0070f3;
+  color: white;
+}
+
+

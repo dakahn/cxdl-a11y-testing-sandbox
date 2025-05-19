@@ -1,0 +1,15 @@
+.breadcrumbs {
+}
+
+.breadcrumbs__list {
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrumbs__listitem {
+  display: flex;
+}
+
+.breadcrumbs__listitem * {
+  padding-right: .5rem;
+}

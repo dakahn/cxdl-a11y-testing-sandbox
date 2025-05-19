@@ -1,0 +1,19 @@
+.textAreaWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.textAreaLabel {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.textArea {
+  outline: none;
+  appearance: none;
+  box-shadow: none;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d7d7d8;
+}

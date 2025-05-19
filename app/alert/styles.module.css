@@ -1,0 +1,19 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkseagreen;
+  border: 2px solid darkslategray;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.alert__button {
+  padding: 8px;
+  background: transparent;
+  border: none;
+}
+
+.alert__message, .alert__cta {
+  display: flex;
+}

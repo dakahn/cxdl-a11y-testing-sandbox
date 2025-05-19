@@ -1,0 +1,44 @@
+    .wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .button {
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 999px;
+      border: none;
+      height: 24px;
+      width: 24px;
+      position: relative;
+      background-color: lawngreen;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      width: max-content;
+      background-color: #ffffff;
+      color: black;
+      text-align: center;
+      padding: 16px;
+      width: max-content;
+      line-height: 20px;
+      border-radius: 14px;
+      border: 1px solid #d7d7d8;
+      font-size: 14px;
+      transform: translateY(-50%);
+      max-width: 450px;
+      transition: opacity 0.3s;
+      z-index: 1;
+      position: absolute;
+      bottom: auto;
+      left: 175%;
+      top: 50%;
+    }
+
+    .wrapper:hover .tooltip,
+    .wrapper:focus-within .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }

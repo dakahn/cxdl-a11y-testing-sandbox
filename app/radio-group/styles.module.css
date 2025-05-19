@@ -1,0 +1,18 @@
+.groupWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 24rem;
+  border: none;
+}
+
+.groupWrapper__column {
+  border: none;
+}
+
+.listItem {
+  padding-bottom: 1rem;
+}
+
+.legend {
+  font-weight: 900;
+}
