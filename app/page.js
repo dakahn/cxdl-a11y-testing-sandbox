@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
         </ul>
         <h2>Usability Tests</h2>
         <ul>
-          <li>No tests available</li>
+          <li><Link href="/tests/implicit-radio-selection">Implicit Radio Button Selection</Link></li>
         </ul>
       </main>
     </div>
