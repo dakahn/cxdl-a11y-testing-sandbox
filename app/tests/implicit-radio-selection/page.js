@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -28,6 +28,7 @@ export default function Home() {
         <legend className={styles.legend}>Privacy options</legend>
         <div className={styles.inputWrapper}>
           <input
+            className={styles.input}
             id="option1"
             type="radio"
             name="options"
@@ -37,11 +38,14 @@ export default function Home() {
             disabled={!isActive}
             aria-label="First option"
           />
-          <label htmlFor="option1" className={styles.label}>Link is private</label>
+          <label htmlFor="option1" className={styles.label}>
+            Link is private
+          </label>
         </div>
 
         <div className={styles.inputWrapper}>
           <input
+            className={styles.input}
             id="option2"
             type="radio"
             name="options"
@@ -51,7 +55,9 @@ export default function Home() {
             disabled={!isActive}
             aria-label="Second option"
           />
-          <label htmlFor="option2" className={styles.label}>Link is public and sharable</label>
+          <label htmlFor="option2" className={styles.label}>
+            Link is public and sharable
+          </label>
         </div>
         <button
           onClick={handleEnableRadios}
@@ -60,11 +66,11 @@ export default function Home() {
           aria-label="Enable radio buttons and select Option 2"
         >
           Copy sharable link
-          <span aria-hidden="true" className={styles.buttonIcon}>⤴</span>
+          <span aria-hidden="true" className={styles.buttonIcon}>
+            ⤴
+          </span>
         </button>
       </fieldset>
-
     </main>
   );
 }
-
