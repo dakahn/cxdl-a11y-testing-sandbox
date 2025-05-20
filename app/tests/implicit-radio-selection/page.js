@@ -5,18 +5,18 @@ import { useState } from "react";
 import styles from "./styles.module.css";
 
 export default function Home() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsPrivate] = useState(false);
   const [selectedOption, setSelectedOption] = useState("option1"); // Default selection
 
   const handleEnableRadios = () => {
-    setIsActive(true);
+    setIsPrivate(true);
     setSelectedOption("option2"); // Select Option 2 when enabled
   };
 
   const handleSelection = (option) => {
     setSelectedOption(option);
     if (option === "option1") {
-      setIsActive(false); // Disable radios & button when Option 1 is selected again
+      setIsPrivate(false); // Disable radios & button when Option 1 is selected again
     }
   };
 
@@ -35,12 +35,14 @@ export default function Home() {
             value="Link is private"
             checked={selectedOption === "option1"}
             onChange={() => handleSelection("option1")}
-            disabled={!isActive}
             aria-label="First option"
           />
           <label htmlFor="option1" className={styles.label}>
-            Link is private
+            List is private
           </label>
+          <div className={styles.inputDescription}>
+            The list is private and viewable only by you.
+          </div>
         </div>
 
         <div className={styles.inputWrapper}>
@@ -52,25 +54,51 @@ export default function Home() {
             value="Link is public and sharable"
             checked={selectedOption === "option2"}
             onChange={() => handleSelection("option2")}
-            disabled={!isActive}
             aria-label="Second option"
           />
           <label htmlFor="option2" className={styles.label}>
-            Link is public and sharable
+            List is public and sharable
           </label>
+          <div className={styles.inputDescription}>
+            The list is public and is viewable by anyone with the link. Other
+            users can make copies of your list.
+          </div>
         </div>
-        <button
-          onClick={handleEnableRadios}
-          className={styles.button}
-          disabled={isActive}
-          aria-label="Enable radio buttons and select Option 2"
-        >
+        <button onClick={handleEnableRadios} className={styles.button}>
           Copy sharable link
           <span aria-hidden="true" className={styles.buttonIcon}>
             ⤴
           </span>
         </button>
+        <div className={styles.socialWrapper}>
+          <button
+            onClick={handleEnableRadios}
+            className={styles.socialButton}
+            type="button"
+          >
+            🔗Facebook
+          </button>
+          <button
+            onClick={handleEnableRadios}
+            className={styles.socialButton}
+            type="button"
+          >
+            🔗Instagram
+          </button>
+          <button
+            onClick={handleEnableRadios}
+            className={styles.socialButton}
+            type="button"
+          >
+            🔗Email
+          </button>
+        </div>
       </fieldset>
+      <div
+        className={styles.ariaLiveRegion}
+        role="region"
+        aria-live="polite"
+      ></div>
     </main>
   );
 }

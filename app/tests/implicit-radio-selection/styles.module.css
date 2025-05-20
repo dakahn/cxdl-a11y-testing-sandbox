@@ -24,14 +24,33 @@
   cursor: pointer;
   font-size: 16px;
   padding: 4px;
+  margin-top: 1rem;
   max-width: 50%;
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 4px;
 }
 
-.button:disabled {
-  cursor: not-allowed;
+.socialButton {
+  cursor: pointer;
+  max-width: 6rem;
+  background-color: lightpink;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
 }
 
-.input:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.inputDescription {
+  font-size: small;
+  padding-left: 1.25rem;
+}
+
+.socialWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.socialWrapper > button {
+  margin-bottom: 1rem;
 }

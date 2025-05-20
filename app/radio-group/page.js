@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
 export default function Page() {
   return (
@@ -30,7 +30,10 @@ export default function Page() {
             </fieldset>
           </li>
           <li>
-            <fieldset aria-invalid="false" className={styles.groupWrapper__column}>
+            <fieldset
+              aria-invalid="false"
+              className={styles.groupWrapper__column}
+            >
               <legend className={styles.legend}>Problem discovered</legend>
               <div className={styles.radioWrapper}>
                 <input id="radio1" type="radio" />
@@ -53,5 +56,5 @@ export default function Page() {
         </ul>
       </main>
     </div>
-  )
+  );
 }
